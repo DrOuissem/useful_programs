@@ -1,0 +1,27 @@
+import tkinter
+
+window = tkinter.Tk()
+window.geometry("500x500+100+100")
+l1=tkinter.Label(window,text="label1",background="green")
+l2=tkinter.Label(window,text="label2",background="blue")
+l3=tkinter.Label(window,text="label3",background="red")
+l4=tkinter.Label(window,text="label4",background="yellow")
+l1.pack(side=tkinter.BOTTOM)
+l2.pack(side=tkinter.TOP)
+l3.pack(side=tkinter.RIGHT)
+l4.pack(side=tkinter.LEFT)
+
+window2 = tkinter.Toplevel()
+window2.geometry("500x500+600+100")
+l1=tkinter.Label(window2,text="First Name")
+l2=tkinter.Label(window2,text="Last Name")
+e1=tkinter.Entry(window2)
+e2=tkinter.Entry(window2)
+b=tkinter.Button(window2,text="Submit")
+l1.grid(row=0,column=0)
+e1.grid(row=0,column=1)
+l2.grid(row=1,column=0)
+e2.grid(row=1,column=1)
+b.grid(row=2,column=0,columnspan=2,sticky=tkinter.E)
+
+window.mainloop()
