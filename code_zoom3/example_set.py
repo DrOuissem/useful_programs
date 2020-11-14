@@ -1,0 +1,9 @@
+s1={1,2,'a',(1,2),'c'}
+print(type(s1))
+s1.add(1)
+print(s1)
+s2={0,2,'c',(1,2,3),'d'}
+s3=s1.union(s2)
+print(s3)
+s4=s1.intersection(s2)
+print(s4)
